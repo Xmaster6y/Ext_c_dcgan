@@ -1,5 +1,5 @@
-# Usage
-`git lfs` is used to track these files. See [git-lfs](https://git-lfs.github.com/).
+# Disclaimer
+`git lfs` is used to track these files. See [git-lfs](https://git-lfs.github.com/) before cloning or pulling.
 
 # Original data
 ## Coordinates
