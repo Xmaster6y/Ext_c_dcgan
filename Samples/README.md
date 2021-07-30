@@ -11,7 +11,7 @@ The temperature data can be found in `df_tas_cmip6_hadcrut_yearmax.csv`.
 ## Maxima of precipitation
 The precipitation data can be found in `df_pr_cmip56_yearmax.csv`.
 
-#Data-sets for learning
+# Data-sets for learning
 ## Learning a distribution
 The precipitation data used to learn can be found in `real_ds_dist_pluiv_glob_scaled.npy`. The non-scaled version can be found in `real_ds_dist_pluiv_glob.npy`.
 The generated precipitation alike data can be found in `ds_dist_pluiv_glob.npy`.
