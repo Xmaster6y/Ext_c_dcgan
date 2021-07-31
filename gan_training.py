@@ -28,14 +28,14 @@ from sklearn.utils import shuffle
 # Constants definition
 BLOCK_SIZE = 90
 SAMPLING_SIZE = 156
-DATA_SET_SIZE = 41472
+DATA_SET_SIZE = 3 ** 4 * 2 ** 9
 FILE = './Samples/real_ds_dist_pluiv_glob.npy'
 
 FILE_GEN_STEP = "./Networks/gan_dist_pluiv_step_gen"
 FILE_DISC_STEP = "./Networks/gan_dist_pluiv_step_disc"
 
 NUM_EPOCHS = 1  # 50_000
-BATCH_SIZE = 400
+BATCH_SIZE = 3 ** 1 * 2 ** 7
 INIT_LR = 4e-4
 LAST_ACTI = "linear"
 H = 10
@@ -107,6 +107,7 @@ if __name__ == '__main__':
         for epoch in range(0, NUM_EPOCHS):
             print("[INFO] starting epoch {} of {}...".format(epoch + 1,
                                                              NUM_EPOCHS))
+            X = shuffle(X)
             batchesPerEpoch = int(X.shape[0] / BATCH_SIZE)
             for i in range(0, batchesPerEpoch):
                 batch_data = X[i * BATCH_SIZE:(i + 1) * BATCH_SIZE, :] + np.random.normal(loc=SIGMA_NOISE_DATA, size=(

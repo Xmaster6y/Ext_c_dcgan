@@ -28,14 +28,14 @@ from sklearn.utils import shuffle
 # Constants definition
 BLOCK_SIZE = 90
 SAMPLING_SIZE = 165
-DATA_SET_SIZE = 194400
+DATA_SET_SIZE = 2 ** 5 * 3 ** 5 * 5 ** 2
 FILE_X = './Samples/real_ds_cond_trend_temp_glob.npy'
 FILE_Y = './Samples/real_lab_cond_trend_temp_glob.npy'
 FILE_GEN_STEP = "./Networks/gan_cond_trend_temp_step_gen"
 FILE_DISC_STEP = "./Networks/gan_cond_trend_temp_step_disc"
 
 NUM_EPOCHS = 1  # 50_000
-BATCH_SIZE = 400
+BATCH_SIZE = 2 ** 3 * 3 ** 5
 INIT_LR = 4e-4
 LAST_ACTI = "linear"
 H = 10
@@ -45,7 +45,7 @@ SUB_SET_SIZE = 1000
 
 TYPE = 'student'
 SHAPE = 50
-SIGMA_NOISE_DATA = 1e-5
+SIGMA_NOISE_DATA = 1e-3
 W_COND = 2
 
 SIMU_GAN = True
@@ -110,7 +110,7 @@ if __name__ == '__main__':
         for epoch in range(0, NUM_EPOCHS):
             print("[INFO] starting epoch {} of {}...".format(epoch + 1,
                                                              NUM_EPOCHS))
-            lowest_loss_step = np.inf
+            X, Y = shuffle(X, Y)
             batchesPerEpoch = int(X.shape[0] / BATCH_SIZE)
             for i in range(0, batchesPerEpoch):
                 batch_data = X[i * BATCH_SIZE:(i + 1) * BATCH_SIZE, :] + np.random.normal(loc=SIGMA_NOISE_DATA, size=(
