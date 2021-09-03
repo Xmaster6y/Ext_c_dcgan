@@ -1,5 +1,5 @@
 # Disclaimer
-Samples are now compressed in an archive file for suitability.
+Some files are missing due to their size, should you need them feel free to contact me.
 
 # Original data
 _**Edit :** Data-sets were deleted due to their size._
