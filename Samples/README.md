@@ -1,5 +1,5 @@
 # Disclaimer
-`git lfs` is used to track these files. See [git-lfs](https://git-lfs.github.com/) before cloning or pulling.
+Samples are now compressed in an archive file for suitability.
 
 # Original data
 _**Edit :** Data-sets were deleted due to their size._
