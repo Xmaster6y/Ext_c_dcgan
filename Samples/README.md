@@ -2,7 +2,7 @@
 `git lfs` is used to track these files. See [git-lfs](https://git-lfs.github.com/) before cloning or pulling.
 
 # Original data
-*__Edit : __ Data-sets were deleted due to their size.*
+_**Edit :** Data-sets were deleted due to their size._
 ## Coordinates
 Coordinates of cells can be found in `df_lonlat.csv`. The coordinates are the longitude and the latitude.
 
