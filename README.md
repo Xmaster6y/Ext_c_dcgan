@@ -1,5 +1,6 @@
 # Disclaimer
-This repository is not meant be used in production or to product real usable data. It is still incomplete and not perfect. For now it only serves the purpose of being supplementarial materials for my report.
+This repository is not meant be used in production or to product real usable data. It is still incomplete and not perfect. For now it only serves the purpose of being supplementarial materials for my report available [here](report.pdf), beware it's in french.
+.
 
 # Repository structure and usage
 ## Executable files
